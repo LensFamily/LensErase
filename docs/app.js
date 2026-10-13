@@ -12,7 +12,7 @@
 
   function modelsFor(c, filtered=false) {
     if(c.id.startsWith('showcase')) return ['Overview','Input','Selection','Mask','LensErase'];
-    if(c.id.startsWith('commercial')) return ['Input','Mask','GPT-Image 2.5','Flux2-Erase','LensErase'];
+    if(c.id.startsWith('commercial')) return ['Input','Mask','GPT-Image2.5-Sunburst','Flux2-Erase','LensErase'];
     if(filtered && state.open.baseline!=='all') return ['Input','Mask',state.open.baseline,'LensErase'];
     return ['Input','Mask','OSOR','OmniPaint','ObjectClear','GeoRemover','RORem-mixed','LensErase'];
   }
@@ -91,7 +91,7 @@
   function showcaseCard(c){return `<article class="showcase-card" data-case-id="${c.id}"><div class="showcase-visual">${animationMarkup(c)}</div></article>`;}
   function comparisonCard(c,section){
     const models=modelsFor(c,true),ratio=c.views.Input.width/c.views.Input.height;
-    return `<article class="comparison-card${section==='open'?' open-comparison':''}" data-case-id="${c.id}"><div class="comparison-card-header"><span class="case-tag"><span class="case-number">${c.id.split('-').at(-1)}</span>${esc(c.category)}</span><button class="text-button" type="button" data-open="${c.id}" data-model="LensErase">Inspect case ↗</button></div><div class="comparison-views" style="--columns:${models.length};--view-ratio:${ratio}">${models.map(model=>`<figure class="comparison-view${model==='LensErase'?' is-ours':''}"><figcaption>${esc(model)}</figcaption><button class="image-button" type="button" data-open="${c.id}" data-model="${esc(model)}" aria-label="Inspect ${esc(model)} for ${esc(c.category)} case ${c.id.split('-').at(-1)}">${imageTag(c.views[model],`${model} — ${c.category} removal`)}</button></figure>`).join('')}</div></article>`;
+    return `<article class="comparison-card${section==='open'?' open-comparison':''}" data-case-id="${c.id}"><div class="comparison-card-header"><span class="case-tag"><span class="case-number">${c.id.split('-').at(-1)}</span>${esc(c.category)}</span><button class="text-button" type="button" data-open="${c.id}" data-model="LensErase">Inspect case ↗</button></div><div class="comparison-views" style="--columns:${models.length};--view-ratio:${ratio}">${models.map(model=>`<figure class="comparison-view${model==='LensErase'?' is-ours':''}${model==='GPT-Image2.5-Sunburst'?' is-sunburst':''}"><figcaption>${esc(model)}</figcaption><button class="image-button" type="button" data-open="${c.id}" data-model="${esc(model)}" aria-label="Inspect ${esc(model)} for ${esc(c.category)} case ${c.id.split('-').at(-1)}">${imageTag(c.views[model],`${model} — ${c.category} removal`)}</button></figure>`).join('')}</div></article>`;
   }
   function renderSection(section){
     const cases=filteredCases(section),shown=Math.min(state[section].shown,cases.length),grid=document.querySelector(`#${section}-grid`);
