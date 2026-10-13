@@ -124,6 +124,8 @@
   }
   function showCredit(c){
     const line=document.querySelector('#dialog-credit'),credit=gallery.imageCredits[c.creditId];
+    line.replaceChildren();line.hidden=!credit;
+    if(!credit)return;
     line.replaceChildren(document.createTextNode('Source: '),creditContent(credit));
     if(credit.note){line.append(document.createTextNode(`. ${credit.note}`));}
   }
