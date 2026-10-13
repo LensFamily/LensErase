@@ -62,3 +62,4 @@ dialog{padding:0;width:min(1200px,calc(100vw - 50px));max-height:calc(100dvh - 4
 /* Make the section labels legible beside their display headings. */
 .section-heading .eyebrow,.benchmark-layout>div>.eyebrow{font-size:14px;font-weight:650;letter-spacing:.11em;color:#555e6a;line-height:1.6}
 @media(max-width:580px){.section-heading .eyebrow,.benchmark-layout>div>.eyebrow{font-size:12px;letter-spacing:.09em}}
+.code-release-note{margin:-18px 0 30px;font-size:13px;line-height:1.6;color:var(--muted)}.code-release-note a{color:var(--ink);text-decoration:underline;text-decoration-color:#c9cdd3;text-underline-offset:3px;overflow-wrap:anywhere}.code-release-note a:hover{text-decoration-color:currentColor}
