@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 470">
+<defs>
+  <linearGradient id="aperture-ink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#303c4a"/><stop offset="1" stop-color="#202a37"/></linearGradient>
+  <linearGradient id="aperture-teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2199a5"/><stop offset="1" stop-color="#0e8290"/></linearGradient>
+  <linearGradient id="eraser-body" gradientUnits="userSpaceOnUse" x1="-48" y1="-117" x2="48" y2="50"><stop stop-color="#45b5bf"/><stop offset=".48" stop-color="#219ba8"/><stop offset="1" stop-color="#0c7c8b"/></linearGradient>
+  <linearGradient id="eraser-tip" gradientUnits="userSpaceOnUse" x1="-48" y1="40" x2="48" y2="135"><stop stop-color="#ffb19b"/><stop offset=".55" stop-color="#ff9b85"/><stop offset="1" stop-color="#ef806f"/></linearGradient>
+  <linearGradient id="eraser-edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#147381"/><stop offset=".611" stop-color="#0a6575"/><stop offset=".611" stop-color="#d76c5d"/><stop offset="1" stop-color="#ce6054"/></linearGradient>
+  <linearGradient id="eraser-bevel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".65"/><stop offset="1" stop-color="#fff" stop-opacity=".12"/></linearGradient>
+  <clipPath id="eraser-face"><rect x="-48" y="-117" width="96" height="252" rx="20"/></clipPath>
+</defs>
+<g fill="url(#aperture-ink)">
+  <path d="M168 24 C98 49 39 110 16 196 C97 140 211 105 298 148 C269 94 224 52 168 24 Z"/>
+  <path d="M12 219 C59 177 126 149 192 145 C127 207 85 282 57 371 C22 328 6 275 12 219 Z"/>
+  <path d="M130 239 C137 318 194 404 273 454 C198 470 120 443 70 387 C81 331 102 279 130 239 Z"/>
+  <path d="M178 328 C211 344 249 347 285 338 C313 376 343 403 375 412 C352 429 325 442 297 449 C244 422 203 382 178 328 Z"/>
+  <path d="M414 85 C430 103 444 123 455 146 L350 251 C382 198 406 137 414 85 Z"/>
+</g>
+<path d="M189 17 C262 -2 341 13 399 69 C395 127 377 180 346 224 C323 141 269 66 189 17 Z" fill="url(#aperture-teal)"/>
+<g transform="translate(439 242) rotate(45)">
+  <rect x="-36" y="-107" width="96" height="252" rx="20" fill="url(#eraser-edge)"/>
+  <g clip-path="url(#eraser-face)">
+    <rect x="-48" y="-117" width="96" height="156" fill="url(#eraser-body)"/>
+    <rect x="-48" y="38" width="96" height="97" fill="url(#eraser-tip)"/>
+    <path d="M-48 38 H48" stroke="#086a79" stroke-opacity=".19" stroke-width="2"/>
+    <path d="M-48 40 H48" stroke="#fff" stroke-opacity=".22"/>
+  </g>
+  <path d="M-44 111 V-96 C-44 -105.4 -36.4 -113 -27 -113 H25" fill="none" stroke="url(#eraser-bevel)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M-45 115 C-44.5 124 -37 131 -28 131 H27 C36 131 43 124 44 115" fill="none" stroke="#ffccba" stroke-opacity=".35" stroke-width="1.5"/>
+</g>
+</svg>
