@@ -23,7 +23,7 @@ Guo Lu<sup>1,†</sup>, Yan Lu<sup>6</sup>, Baining Guo<sup>6</sup>
 &nbsp;
 <a href="#release-status"><img src="https://img.shields.io/badge/Code-Coming_Soon-233D56?style=flat-square&logo=github&logoColor=white" alt="Code coming soon" height="24" /></a>
 &nbsp;
-<a href="#paper"><img src="https://img.shields.io/badge/Paper-Coming_Soon-B64A46?style=flat-square" alt="Paper coming soon" height="24" /></a>
+<a href="https://arxiv.org/abs/2610.18072"><img src="https://img.shields.io/badge/Paper-arXiv-B64A46?style=flat-square" alt="Paper on arXiv" height="24" /></a>
 &nbsp;
 <a href="https://github.com/LensFamily/LensErase"><img src="https://img.shields.io/github/stars/LensFamily/LensErase?style=social" alt="GitHub stars" height="24" /></a>
 </p>
@@ -66,7 +66,7 @@ Explore the [animated removal demos](https://lensfamily.github.io/LensErase/#fea
 
 ### Paper
 
-**Paper coming soon.** The paper link will be added here when available.
+[LensErase: A Foundation Model for Erase Anything](https://arxiv.org/abs/2610.18072) (arXiv:2610.18072).
 
 ## Related Project
 
